@@ -1,0 +1,35 @@
+LIBRARY RXGDUTIL INITINSTANCE LONGNAMES
+PROTMODE
+DESCRIPTION 'GD Utilities - AB Software 1995'
+DATA MULTIPLE NONSHARED
+STACKSIZE 65536
+EXPORTS
+     RXGDLOADFUNCS              = RxgdLoadFuncs                 @1
+     RXGDUNLOADFUNCS            = RxgdUnloadFuncs               @2
+     RXGDIMAGECREATE            = RxgdImageCreate               @3
+     RXGDIMAGECREATEFROMGIF     = RxgdImageCreateFromGIF        @4
+     RXGDIMAGEDESTROY           = RxgdImageDestroy              @5
+     RXGDIMAGEGIF               = RxgdImageGIF                  @6
+     RXGDIMAGESETPIXEL          = RxgdImageSetPixel             @7
+     RXGDIMAGELINE              = RxgdImageLine                 @8
+     RXGDIMAGEPOLYGON           = RxgdImagePolygon              @9
+     RXGDIMAGERECTANGLE         = RxgdImageRectangle            @10
+     RXGDIMAGEARC               = RxgdImageArc                  @11
+     RXGDIMAGEFILLTOBORDER      = RxgdImageFillToBorder         @12
+     RXGDIMAGEFILL              = RxgdImageFill                 @13
+     RXGDIMAGECOLORALLOCATE     = RxgdImageColorAllocate        @14
+     RXGDIMAGESTRING            = RxgdImageString               @15
+     RXGDIMAGESETBRUSH          = RxgdImageSetBrush             @16
+     RXGDIMAGESETSTYLE          = RxgdImageSetStyle             @17
+     RXGDIMAGEGETSTYLEDBRUSHED  = RxgdImageGetStyledBrushed     @18
+     RXGDIMAGEGETCOLOR          = RxgdImageGetColor             @19
+     RXGDIMAGEGETPIXEL          = RxgdImageGetPixel             @20
+     RXGDIMAGESXY               = RxgdImageSxy                  @21
+     RXGDIMAGEBOUNDSSAFE        = RxgdImageBoundsSafe           @22
+     RXGDIMAGEGETTTI            = RxgdImageGetTTI               @23
+     RXGDIMAGECOLORDEALLOCATE   = RxgdImageColorDeallocate      @24
+     RXGDIMAGECOLORSET          = RxgdImageColorSet             @25
+     RXGDIMAGECOPY              = RxgdImageCopy                 @26
+     RXGDIMAGECOPYRESIZED       = RxgdImageCopyResized          @27
+     RXGDIMAGESETCOLOR          = RxgdImageSetColor             @28
+

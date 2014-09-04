@@ -1,0 +1,23 @@
+# IBM Developer's Workframe/2 Make File Creation run at 22:04:13 on 09/14/95
+
+# Make File Creation run in directory:
+#   E:\SOURCE\GD1.2;
+
+# Assumed INCLUDE environment variable path:
+#   E:\TOOLKT21\C\OS2H;
+#   E:\TOOLKT21\C\OS2H\VDD;
+#   E:\TOOLKT21\ASM\OS2INC;
+#   E:\IBMCPP\INCLUDE;
+#   E:\IBMCPP\IBMCLASS;
+#   E:\VISPROC;
+#   E:\VISPROCP;
+#   E:\tcpip\include;
+
+
+INCLUDE000=$(INCLUDE)
+
+
+RXGDUTIL.OBJ:  RXGDUTIL.C  \
+#  {$(INCLUDE000)}os2.h  \
+#  {$(INCLUDE000)}rexxsaa.h  \
+   RXGDUTIL.MAK

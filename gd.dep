@@ -1,0 +1,63 @@
+# IBM Developer's Workframe/2 Make File Creation run at 22:14:07 on 09/13/95
+
+# Make File Creation run in directory:
+#   E:\SOURCE\GD1.2;
+
+# Assumed INCLUDE environment variable path:
+#   E:\TOOLKT21\C\OS2H;
+#   E:\TOOLKT21\C\OS2H\VDD;
+#   E:\TOOLKT21\ASM\OS2INC;
+#   E:\IBMCPP\INCLUDE;
+#   E:\IBMCPP\IBMCLASS;
+#   E:\VISPROC;
+#   E:\VISPROCP;
+#   E:\tcpip\include;
+
+
+INCLUDE001=.
+INCLUDE001=$(INCLUDE001);$(INCLUDE)
+
+INCLUDE000=$(INCLUDE)
+
+
+gd.OBJ:  gd.c  \
+#  {$(INCLUDE000)}malloc.h  \
+#  {$(INCLUDE000)}stdio.h  \
+#  {$(INCLUDE000)}math.h  \
+#  {$(INCLUDE000)}string.h  \
+#  {$(INCLUDE000)}stdlib.h  \
+#  {$(INCLUDE000)}ctype.h  \
+   {$(INCLUDE001)}gd.h  \
+#    {$(INCLUDE000)}stdio.h  \
+   {$(INCLUDE001)}mtables.c  \
+   GD.MAK
+
+gdfontg.OBJ:  gdfontg.c  \
+   {$(INCLUDE001)}gdfontg.h  \
+     {$(INCLUDE001)}gd.h  \
+#      {$(INCLUDE000)}stdio.h  \
+   GD.MAK
+
+gdfontl.OBJ:  gdfontl.c  \
+   {$(INCLUDE001)}gdfontl.h  \
+     {$(INCLUDE001)}gd.h  \
+#      {$(INCLUDE000)}stdio.h  \
+   GD.MAK
+
+gdfontmb.OBJ:  gdfontmb.c  \
+   {$(INCLUDE001)}gdfontmb.h  \
+     {$(INCLUDE001)}gd.h  \
+#      {$(INCLUDE000)}stdio.h  \
+   GD.MAK
+
+gdfonts.OBJ:  gdfonts.c  \
+   {$(INCLUDE001)}gdfonts.h  \
+     {$(INCLUDE001)}gd.h  \
+#      {$(INCLUDE000)}stdio.h  \
+   GD.MAK
+
+gdfontt.OBJ:  gdfontt.c  \
+   {$(INCLUDE001)}gdfontt.h  \
+     {$(INCLUDE001)}gd.h  \
+#      {$(INCLUDE000)}stdio.h  \
+   GD.MAK
